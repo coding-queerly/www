@@ -1,0 +1,40 @@
+{
+  "name": "coding-queerly",
+  "version": "1.0.0",
+  "description": "Coding Queerly",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack-cli",
+    "lint": "standard src/**/*.js*",
+    "serve": "firebase serve",
+    "shell": "firebase shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase log",
+    "upgrade-interactive": "npm-check --update"
+  },
+  "private": true,
+  "devDependencies": {
+    "@emotion/core": "^10.0.10",
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/styled": "^10.0.10",
+    "babel-loader": "^8.0.5",
+    "npm-check": "^5.9.0",
+    "standard": "^12.0.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.3",
+    "@babel/runtime-corejs3": "^7.4.3",
+    "@reach/router": "^1.2.1",
+    "firebase": "^5.9.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "readystate": "^0.4.1"
+  }
+}

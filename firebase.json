@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "/links/**",
+        "dynamicLinks": true
+      }
+    ],
+    "predeploy": "npm run build",
+    "postdeploy": "echo DONE ❤️",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+    
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
